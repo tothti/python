@@ -1,0 +1,36 @@
+
+
+==============
+Numeric types
+==============
+
+>>> 2 + 2
+4
+>>> 10 - 4
+6
+>>> 3 * 9
+27
+>>> 5 / 3 	# int change to float
+1.66666666667
+>>> 5 // 3 	# int remain int
+1
+>>> 5 % 3	# int remain int
+2
+
+>>> 2 ** 3
+8
+>>> pow(2, 3)
+
+>>> 1.1 + 3  # float will be float
+4.1
+>>> 4.0 + 3
+7.0
+
+# conversion
+>>> str(7.0)
+'7.0'
+>>> float('7.0')
+7.0
+
+>>> int(5.66666) # not rounding, just cutting the end
+5

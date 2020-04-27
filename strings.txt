@@ -1,0 +1,39 @@
+==============
+Strings
+==============
+
+
+"" and '' is the same
+
+triple quote
+""" or '''
+multi line strings
+
+>>> 'single' + ' qoute'
+'single quote'
+>>> "Ha" * 4
+'HaHaHaHa'
+
+calling methods:
+>>> 'single'.find('d') # search within that string
+-1
+>>> 'single'.find('g') # it gives back the index of the substring inside the sequence
+3
+>>> 'TeStIng'.lower()  # all lower case
+'testing'
+# The two instance is different, strings are immutable in python
+# We can create new versions, but can't modify the original
+
+>>> print("TAB\tDelimited")
+TAB		Delimited
+>>> print("New\nLine")
+New
+Line
+>>> print("Slash\Character") # Not correct
+>>> print("Slash\\Character") # correct
+
+>>> print('"Double" quotes')
+"Double" quotes
+>>> print('\'Double\' quotes')
+'Double' quotes
+
