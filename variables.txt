@@ -1,0 +1,35 @@
+==============
+==============
+==============
+Working with variables
+>>> my_name = "Tibi"
+>>> my_name
+'Tibi'
+>>> print(my_name)
+Tibi
+# immutable
+>>> my_name + "ke"
+'Tibike'
+>>> my_name
+'Tibi'
+# we can't modify it, we make a new version of it and save it to the same variable
+>>> my_name += "ke"
+>>> my_name
+'Tibike'
+
+>>> my_name = Tibor
+>>> last_name = Toth
+>>> my_name = my_name + last_name
+>>> my_name
+Tibor Toth
+
+# variables are not tied to types
+>>> my_str = "Tibi"
+>>> my_int = 1
+>>> my_str = my_int
+>>> my_str
+1
+# also not tied to pointers
+>>> my_int = 4
+>>> my_str
+1

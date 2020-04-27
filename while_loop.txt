@@ -1,0 +1,55 @@
+While loop
+
+>>> while True:
+...     print('Looping')
+...
+Looping
+Looping
+Looping
+Looping
+Looping
+Looping
+Looping
+Looping
+Looping
+
+CTRL + C
+
+>>> count = 1
+>>> while count <= 4:
+...     print('Looping')
+...     count +=1
+...
+Looping
+Looping
+Looping
+Looping
+>>> count = 0
+>>> while count < 10:
+...     if count %2 == 0:
+...         count += 1
+...         continue	# go back to the begining of the loop and continue
+...     print(f"We're counting odd numbers: {count}")	# f is a format string there (since python 3.6) | it's a string interpolation
+...     count += 1
+...
+We're counting odd numbers: 1
+We're counting odd numbers: 3
+We're counting odd numbers: 5
+We're counting odd numbers: 7
+We're counting odd numbers: 9
+>>>
+
+
+# older python it'll look like this:
+# print("We're counting odd numbers: %s" % count)
+
+
+>>> count = 1
+>>> while count < 10:
+...     if count %2 == 0:
+...         break	# stop the loop
+...     print(f"We're counting odd numbers: {count}")
+...     coutn += 1
+...
+We're counting odd numbers: 1
+>>>

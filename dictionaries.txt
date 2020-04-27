@@ -1,0 +1,39 @@
+Dictionaries
+# they have named indexes
+# keys needs to be hashable (can't be lists)
+>>> ages = { 'kevin': 29, 'alex': 29, 'bob': 40}
+>>> ages
+{'bob': 40, 'alex': 29, 'kevin': 29}
+>>> ages['kevin']
+29
+# add new key
+>>> ages['Tibi'] = 35
+>>> ages
+{'bob': 40, 'alex': 29, 'Tibi': 35, 'kevin': 29}
+# remove keys
+>>> del ages['kevin']
+>>> ages
+{'bob': 40, 'alex': 29, 'Tibi': 35}
+# remove all dict
+>>> del ages
+# Reads the value and remoes the key
+>>> ages.pop('alex')
+29
+>>> ages
+{'bob': 40, 'Tibi': 35}
+
+# get the value if exists, but give back None if it does not exists (no error)
+>>> ages.get('bob')
+40
+>>> ages.get('Alex')
+>>>
+
+
+>>> ages.keys()
+dict_keys(['bob', 'Tibi'])
+>>> list(ages.keys())
+['bob', 'Tibi']
+>>> ages.values()
+dict_values([40, 35])
+>>> list(ages.values())
+[40, 35]

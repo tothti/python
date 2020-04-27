@@ -1,0 +1,66 @@
+Conditionals and Comperisons
+
+>>> 1 < 2
+True
+>>> 1 > 2
+False
+>>> 1 == 1
+True
+>>> 1 == 1.0
+True
+>>> 'a' == 'a'
+True
+>>> 'A' == 'a'
+False
+>>> 3.1 == 'test'
+False
+>>> 3.1 >= 'test'
+ERROR
+>>> 'a' > 'b'
+False
+>>> 'b' > 'a'
+True
+>>> 'a' != 'b'
+True
+>>> 3.1 != 'test'
+True
+
+
+>>> 2 in [1, 2, 3]
+True
+>>> 4 in [1, 2, 3]
+False
+>>> 2 not in [1, 2, 3]
+False
+>>> 4 not in [1, 2, 3]
+True
+
+
+# indentation is 4 spaces (we need to use it)
+>>> if True:
+...     print('Was Ture')
+...
+Was True
+>>> if 1 > 2:
+...     print("Was true")
+...
+>>> if 1 > 2:
+...     print('Was true')
+... else:
+...     print('Was false')
+...
+Was false
+>>>
+
+>>> name = "kevin"
+>>> if len(name) >= 6:
+...     print('The name is long')
+... elif len(name) == 5:
+...     print("Name is 5 characters")
+... elif len(name) >= 4:
+...     print("Name is 4 or more")
+... else:
+...     print("name is short")
+...
+Name is 5 characters
+>>>

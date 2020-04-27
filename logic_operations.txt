@@ -1,0 +1,48 @@
+Logic operations
+
+# inversing with "not"
+>>> bool("")
+False
+>>> not ""
+True
+>>> not 1 > 2
+True
+
+# OR
+# will give us the first "truthy" value
+>>> "" or "Tibi"
+'Tibi'
+>>> 'Tibi' or 0
+'Tibi'
+
+>>> first = ""
+>>> last = "Toth"
+>>> if first or last:
+...     print("Part of name was given")
+...
+Part of name was given
+>>>
+
+>>> first_name = first or "John"
+>>> first_name
+'John'
+
+
+
+
+>>> first = "John"
+>>> last = ""
+>>> if first and last:
+...     print("User has full name")
+...
+>>>
+
+>>> "John" and ''
+''
+>>> "" and "John"
+''
+
+>>> (1 > 2) and print("something")
+False
+>>> (1 < 2) and print("something")
+something

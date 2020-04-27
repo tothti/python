@@ -1,0 +1,72 @@
+For loop
+
+>>> colors = ['blue', 'green', 'red', 'purple']
+>>> for color in colors:
+... 	print(color)
+...
+blue
+green
+red
+purple
+>>>
+
+>>> for color in colors:
+... 	if color == 'blue':
+... 		continue
+... 	elif color == 'red':
+... 		break
+... 	print(color)
+...
+green
+>>>
+
+
+>>> point = (2.1, 3.0, 7)
+>>> for value in point:
+... 	print(value)
+...
+2.1
+3.0
+7
+>>> ages = { 'kevin': 29, 'kayla': 21, 'bob': 40}
+>>> for key in ages:
+... 	print(f"{key} is {ages[key]}")
+...
+kevin is 29
+kayla is 21
+bob is 40
+>>>
+
+>>> for letter in "my_string":
+... 	print(letter)
+m
+y
+_
+s
+t
+r
+i
+n
+g
+>>>
+
+
+>>> list_of_points = [(1, 2), (2, 3), (3, 4)]
+>>> for x, y in list_of_points:
+... 	print(f"x: {x}, y: {y}")
+...
+x: 1, y: 2
+x: 2, y: 3
+x: 3, y: 4
+>>> for name, age in ages.items():
+... 	print(f"Person named: {name}")
+... 	print(f"Age of {age}")
+...
+Person named: kevin
+Age of 29
+Person named: kayla
+Age of 21
+Person named: bob
+Age of 40
+>>> ages.items()
+dict_items([('kevin', 29), ('kayla', 21), ('bob', 40)])
